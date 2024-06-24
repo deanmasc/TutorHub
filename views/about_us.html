@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        /* Custom styles for centering */
+        .center-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust as needed to center vertically */
+
+        }
+        .card-container {
+            margin-bottom: 20px; /* Adjust the margin to add space between the cards */
+        }
+         
+        footer {
+            bottom: 0;
+            width: 100%;
+        }
+
+        .text {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+    <style>
+        /* For phone-view only*/
+        @media only screen and (max-width: 767px) {
+            .center-cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 160vh; /* Adjust as needed to center vertically */
+
+            }
+            .card-container {
+                margin-bottom: 20px; /* Adjust the margin to add space between the cards */
+            }
+        }
+    </style>
+</head>
+<body background="/images/tech_background.jpg">
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <h1 class="display-4">TutorHub</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-link" aria-current="page" href="/aboutus">About Us</a>
+                    <a class="nav-link active" aria-current="page" href="/enquiry">Enquire</a>
+                    <a class="nav-link active" aria-current="page" href="/services">Services</a>
+                </div>
+            </div>
+            <a href="/">
+                <img src="/images/finished2.png" width="150" height="70" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+    <h1 class="display-2 text-white text-center">About Us</h1>
+    <div class="container-fluid center-cards">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/dean_pic.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dean Mascitti</h5>
+                        <p class="card-text">Dean scored highly in VCE achieving a 90+ ATAR in 2021, with high scores in Physics and Methods which he specialises in tutoring. As a third-year Engineering and Commerce student at Monash, Dean has had great success, achieving a spot on the prestigious Dean's List for exceptional academic triumph in 2022. Continuing into 2023, Dean has accepted a role as a teaching assistant at University to assist in teaching complex content to fellow Engineering students.</p>
+                        <a href="/enquiry" class="btn btn-primary">Enquire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/harry_pic.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Katelis</h5>
+                        <p class="card-text">Achieving the highest study scores in the Peninsula Grammar cohort for Chemistry and Physics during VCE in 2021, Harry achieved an ATAR of 98+. His success as a student continued into 2023, where he now studies Engineering at Monash University under the Accelerated Masters program for high achieving students, scoring High Distinctions in subjects that incorporate Physics and Mathematics. </p>
+                        <a href="/enquiry" class="btn btn-primary">Enquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-primary text-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="text-black col-md-4 display-3">
+                    <p style="font-size: 40px">Contact Us!</p>
+                </div>
+                <div class=" text-black col-md-4">
+                    <p style="font-size: 20px">Email:</p>
+                    <p>tutorhub321@gmail.com</p>
+                </div>
+                <div class="text-black col-md-4 text-md-right">
+                    <p style="font-size: 20px">Phone:</p>
+                    <p>Dean - 0490 375 031<br>Harry - 0490 764 929</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

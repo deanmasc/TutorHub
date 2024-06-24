@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        /* Custom style to shift cards to the right */
+        .custom-right-shift {
+            margin-left: 150px; /* Adjust the margin as needed */
+        }
+
+        .text {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+    <style>
+        /* For desktop-view only*/
+        @media only screen and (min-width: 768px) {
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        /* For phone-view only*/
+        @media only screen and (max-width: 767px) {
+            footer {
+                bottom: 0;
+                width: 100%;
+            }
+            nav {
+                position: fixed;
+            }
+        }
+    </style>
+</head>
+<body background="/images/tech_background.jpg">
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <h1 class="display-4">TutorHub</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-link active" aria-current="page" href="/aboutus">About Us</a>
+                    <a class="nav-link active" aria-current="page" href="/enquiry">Enquire</a>
+                    <a class="nav-link" aria-current="page" href="/services">Services</a>
+                </div>
+            </div>
+            <a href="/">
+                <img src="/images/finished2.png" width="150" height="70" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+    <h1 class="display-2 text-white text-center">What Do We Tutor?</h1>
+    <hr>
+    <!-- This is for a phone view -->
+    <div class ="d-block d-sm-none">
+        <div class="card text-white" style="width: 24rem;">
+            <img class="card-img" src="/images/math3.webp" alt="Card image" width="100" height="160">
+            <div class="card-img-overlay">
+                <h5 style="font-size: 15px;" class="text card-title">VCE Mathematical Methods</h5>
+                <p style="font-size: 12px;" class="text card-text">We offer structured and detailed sessions catered to the student to help them thrive and excel in VCE Mathematical Methods.</p>
+                <a href="/enquiry" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+        <div class="card text-white" style="width: 24rem;">
+            <img class="card-img" src="/images/physics.jpg" alt="Card image" width="100" height="160">
+            <div class="card-img-overlay">
+                <h5 style="font-size: 15px;" class="text card-title">VCE Physics</h5>
+                <p style="font-size: 12px;" class="text card-text">We offer a detailed and client-tailored VCE Physics tutoring service to assist students in understanding complex concepts and questions.</p>
+                <a href="/enquiry" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+        <div class="card text-white" style="width: 24rem;">
+            <img class="card-img" src="/images/chemistry.jpg" alt="Card image" width="100" height="160">
+            <div class="card-img-overlay">
+                <h5 style="font-size: 15px;" class="text card-title">VCE Chemistry</h5>
+                <p style="font-size: 12px;" class="text card-text">We offer VCE Chemistry Tutoring units 3 & 4 personalized to student needs, providing students with all the tools to excel in VCE Chemistry.</p>
+                <a href="/enquiry" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- This is for a desktop view -->
+    <div class="d-none d-sm-block container-fluid">
+        <div class="row custom-right-shift">
+            <div class="col-md-4">
+                <div class="card text-white" style="width: 24rem;">
+                    <img class="card-img" src="/images/math3.webp" alt="Card image" width="300" height="250">
+                    <div class="card-img-overlay">
+                        <h5 class="text card-title">VCE Mathematical Methods</h5>
+                        <p class="text card-text">We offer structured and detailed sessions catered to the student to help them thrive and excel in VCE Mathematical Methods.</p>
+                        <a href="/enquiry" class="btn btn-primary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white" style="width: 24rem;">
+                    <img class="card-img" src="/images/physics.jpg" alt="Card image" width="300" height="250">
+                    <div class="card-img-overlay">
+                        <h5 class="text card-title">VCE Physics</h5>
+                        <p class="text card-text">We offer a detailed and client-tailored VCE Physics tutoring service to assist students in understanding complex concepts and questions.</p>
+                        <a href="/enquiry" class="btn btn-primary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white" style="width: 24rem;">
+                    <img class="card-img" src="/images/chemistry.jpg" alt="Card image" width="300" height="250">
+                    <div class="card-img-overlay">
+                        <h5 class="text card-title">VCE Chemistry</h5>
+                        <p class="text card-text">We offer VCE Chemistry Tutoring units 3 & 4 personalized to student needs, providing students with all the tools to excel in VCE Chemistry.</p>
+                        <a href="/enquiry" class="btn btn-primary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-primary text-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="text-black col-md-4 display-3">
+                    <p style="font-size: 40px">Contact Us!</p>
+                </div>
+                <div class=" text-black col-md-4">
+                    <p style="font-size: 20px">Email:</p>
+                    <p>tutorhub321@gmail.com</p>
+                </div>
+                <div class="text-black col-md-4 text-md-right">
+                    <p style="font-size: 20px">Phone:</p>
+                    <p>Dean - 0490 375 031<br>Harry - 0490 764 929</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
